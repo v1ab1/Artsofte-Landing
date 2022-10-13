@@ -83,6 +83,8 @@ header a {
     margin: 0 148px;
     display: flex;
     justify-content: space-between;
+    max-width: 1152px;
+    margin: 0 auto;
 }
 .recent-post-header {
     font-size: 22px;
@@ -101,12 +103,68 @@ header a {
 }
 .recent-post-container div {
     background-color: #FFFFFF;
+    padding: 24px 21px 35px 23px;
 }
-
-
-
-
-
+.post-header {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38px;
+    color: #21243D;
+}
+.post-p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #21243D;
+}
+.post-p:nth-of-type(odd) {
+    margin: 18px 0;
+}
+.works-wrapper {
+    padding: 30px 148px 52px;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+.works-header {
+    font-size: 22px;
+    line-height: 60px;
+    color: #21243D;
+    margin-bottom: 20px;
+}
+.work {
+    display: flex;
+    padding-bottom: 32px;
+    border-bottom: solid 1px #E0E0E0;
+    margin-bottom: 31px;
+}
+.work img {
+    margin-right: 18px;
+}
+.work-header {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    color: #21243D;
+}
+.work-year {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 60px;
+    color: #FFFFFF;
+    background: #142850;
+    border-radius: 16px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-right: 26px;
+}
+.dashboard {
+    font-size: 20px;
+    line-height: 29px;
+    color: #8695A4;
+}
+.work-p {
+    line-height: 24px;
+    color: #21243D;
+}
 
 footer {
     padding: 51px 0 54px 0;

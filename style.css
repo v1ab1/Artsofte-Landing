@@ -35,9 +35,12 @@ header {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding: 27px 27px;
+    padding: 10px 27px;
     max-width: 1152px;
     margin: 0 auto;
+    position: fixed;
+    background-color: #FFFFFF;
+    border-bottom: solid 1px #E0E0E0;
 }
 header a {
     margin-right: 33px;
@@ -184,4 +187,37 @@ footer {
 .footer-text {
     text-align: center;
     margin-top: 26px;
+}
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .recent-post {
+        padding: 7px 140px 32px;
+    }
+}
+@media screen and (max-width: 900px) {
+    header {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .recent-post {
+        padding: 7px 140px 32px;
+    }
+    header a {
+        display: none;
+    }
+    .burger {
+        display: block;
+        margin-right: 30px;
+    }
+    .burger img {
+        width: 40px;
+        height: 40px;
+    }
 }

@@ -5,19 +5,19 @@
 	font-style: normal;
 }
 @font-face {
-	src: url('./fonts/Heebo-Regular.ttf') format('truetype');
+	src: url('./fonts/Heebo-Medium.ttf') format('truetype');
 	font-family: 'Heebo';
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
-	src: url('./fonts/Heebo-Regular.ttf') format('truetype');
+	src: url('./fonts/Heebo-Bold.ttf') format('truetype');
 	font-family: 'Heebo';
 	font-weight: 700;
 	font-style: normal;
 }
 @font-face {
-	src: url('./fonts/Heebo-Regular.ttf') format('truetype');
+	src: url('./fonts/Heebo-Black.ttf') format('truetype');
 	font-family: 'Heebo';
 	font-weight: 900;
 	font-style: normal;
@@ -29,14 +29,15 @@
     font-size: 16px;
 }
 body {
-    max-width: 1152px;
-    margin: 0 auto;
+    width: 100%;
 }
 header {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     padding: 27px 27px;
+    max-width: 1152px;
+    margin: 0 auto;
 }
 header a {
     margin-right: 33px;
@@ -45,11 +46,62 @@ header a {
     color: black;
     font-size: 20px;
 }
-
-
-
-
-
+.about {
+    display: flex;
+    padding: 140px 148px 71px;
+    justify-content: space-between;
+    max-width: 1152px;
+    margin: 0 auto;
+}
+.about-text {
+    width: 59%;
+}
+.about-text h1 {
+    font-size: 44px;
+    line-height: 60px;
+    color: #21243D;
+}
+.about-text p {
+    margin: 40px 0;
+}
+.about-text a button {
+    padding: 9px 21px 9px 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background: #FF6464;
+    border: none;
+}
+.recent-post {
+    width: auto;
+    padding-top: 7px;
+    padding-bottom: 32px;
+    background: #EDF7FA;
+}
+.recent-post-container {
+    margin: 0 148px;
+    display: flex;
+    justify-content: space-between;
+}
+.recent-post-header {
+    font-size: 22px;
+    line-height: 60px;
+    color: #21243D;
+}
+.view-all {
+    align-self: center;
+    text-decoration: none;
+    line-height: 24px;
+    text-align: right;
+    color: #00A8CC;
+}
+.recent-post-container div:first-of-type {
+    margin-right: 12px;
+}
+.recent-post-container div {
+    background-color: #FFFFFF;
+}
 
 
 
@@ -58,6 +110,8 @@ header a {
 
 footer {
     padding: 51px 0 54px 0;
+    max-width: 1152px;
+    margin: 0 auto;
 }
 .social-media {
     display: flex;

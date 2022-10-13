@@ -191,7 +191,11 @@ footer {
 .burger {
     display: none;
 }
-
+#dropdown {
+    width: 100%; 
+    height: 100%; 
+    background: black;
+}
 @media screen and (max-width: 1200px) {
     header {
         padding-right: 0;

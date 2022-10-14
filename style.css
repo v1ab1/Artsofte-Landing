@@ -27,20 +27,25 @@
     margin: 0;
     font-family: 'Heebo', Helvetica, Arial, sans-serif;
     font-size: 16px;
+    -webkit-tap-highlight-color: transparent;
 }
 body {
     width: 100%;
 }
 header {
+    width: 100%;
+    position: fixed;
+    background-color: #FFFFFF;
+    border-bottom: solid 1px #E0E0E0;
+    z-index: 150;
+}
+.header-wrapper {
+    max-width: 1152px;
     display: flex;
     justify-content: flex-end;
     width: 100%;
     padding: 10px 27px;
-    max-width: 1152px;
     margin: 0 auto;
-    position: fixed;
-    background-color: #FFFFFF;
-    border-bottom: solid 1px #E0E0E0;
 }
 header a {
     margin-right: 33px;
@@ -192,10 +197,22 @@ footer {
     display: none;
 }
 #dropdown {
+    position: fixed;
     width: 100%; 
-    height: 45%;
+    height: 35%;
     background-color: white;
     border-bottom: solid 1px #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 700ms;
+}
+#dropdown a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 30px;
+    padding: 30px 0 10px 30px;
+    border-bottom: 1px solid #E0E0E0;
 }
 @media screen and (max-width: 1200px) {
     header {

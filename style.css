@@ -225,6 +225,9 @@ footer {
     .recent-post {
         padding: 7px 140px 32px;
     }
+    a {
+        text-decoration: none;
+    }
 }
 @media screen and (max-width: 900px) {
     header {
@@ -257,13 +260,20 @@ footer {
         margin-bottom: 40px;
     }
     .about-text {
-        margin: 0 auto;
+        margin: 0;
+        max-width: 100%;
+        width: unset;
+        padding: 0 20px;
     }
     .about-text p {
         margin 20px 0;
     }
     .about-text h1 {
         font-size: 35px;
+        text-align: center;
+    }
+    .about-text p {
+        text-align: center;
     }
     .about-text button {
         display: flex;
@@ -286,5 +296,8 @@ footer {
     }
     .recent-post {
         padding: 20px 30px 32px;
+    }
+    .works-wrapper {
+        padding: 30px 30px 52px;
     }
 }
